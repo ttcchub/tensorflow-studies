@@ -1,0 +1,22 @@
+# Function definitions
+def calculate_percentage_difference(a, b):
+    numerator = abs(a - b)
+    denominator = (a + b) / 2
+    percentage_difference = 100 * numerator / denominator
+    return percentage_difference
+
+def calculate_difference(a, b):
+    diff = abs(a - b)
+    return diff
+
+# Parameters
+parameters = {'a': 100, 'b': 16, 'c': 89, 'd': 72, 'e': 5}
+
+# Calculate and display differences with 'a'
+for param, value in parameters.items():
+    if param != 'a':
+        percentage_diff = calculate_percentage_difference(parameters['a'], value)
+        diff = calculate_difference(parameters['a'], value)
+        print(f"The percentage difference between a={parameters['a']} and {param}={value} ({parameters['a']} vs {value}) is {percentage_diff}%")
+        print(f"The difference between a={parameters['a']} and {param}={value} ({parameters['a']} vs {value}) is {diff}")
+        print()
