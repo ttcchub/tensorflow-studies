@@ -1,0 +1,74 @@
+#1
+# Function definitions
+def calculate_percentage_difference(a, b):
+    numerator = abs(a - b)
+    denominator = (a + b) / 2
+    percentage_difference = 100 * numerator / denominator
+    return percentage_difference
+
+def calculate_difference(a, b):
+    diff = abs(a - b)
+    return diff
+
+# Parameters
+parameters = {'a': 100, 'b': 16, 'c': 89, 'd': 72, 'e': 1, 'f':99}
+
+# Calculate and display differences with 'a'
+for param, value in parameters.items():
+    if param != 'a':
+        percentage_diff = calculate_percentage_difference(parameters['a'], value)
+        diff = calculate_difference(parameters['a'], value)
+        print(f"The percentage difference between '{param}'={value} and 'a'={parameters['a']} is {percentage_diff}%")
+        print(f"The difference between '{param}'={value} and 'a'={parameters['a']} is {diff}")
+        print()
+
+
+
+
+#2
+# Calculate and store differences with 'a'
+differences = []
+
+for param, value in parameters.items():
+    if param != 'a':
+        percentage_diff = calculate_percentage_difference(parameters['a'], value)
+        differences.append((param, value, percentage_diff))
+
+# Sort the list based on percentage difference
+sorted_differences = sorted(differences, key=lambda x: x[2])
+
+# Display parameters with the lowest percentage difference in a sorted list
+print("Parameters with the lowest percentage difference (sorted):")
+for param, value, percentage_diff in sorted_differences:
+    print(f"'{param}'={value}: {percentage_diff}%")
+
+
+
+#3
+# Function definitions
+def calculate_percentage_difference(a, b):
+    numerator = abs(a - b)
+    denominator = (a + b) / 2
+    percentage_difference = 100 * numerator / denominator
+    return percentage_difference
+
+# Parameters
+parameters = {'a': 100, 'b': 16, 'c': 89, 'd': 72, 'e': 5, 'f': 69}
+
+# Calculate and store differences with 'a'
+differences = []
+
+for param, value in parameters.items():
+    if param != 'a':
+        percentage_diff = calculate_percentage_difference(parameters['a'], value)
+        differences.append((param, value, percentage_diff))
+
+# Sort the list based on percentage difference
+sorted_differences = sorted(differences, key=lambda x: x[2])
+
+# Display the parameter with the lowest percentage difference
+if sorted_differences:
+    lowest_diff_param, lowest_diff_value, lowest_diff_percentage = sorted_differences[0]
+    print(f"The parameter with the lowest percentage difference from 'a' is '{lowest_diff_param}'={lowest_diff_value} with {lowest_diff_percentage}%.")
+else:
+    print("No other parameters to compare.")
