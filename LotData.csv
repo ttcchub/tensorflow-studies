@@ -1,0 +1,12 @@
+LotID,UserID,Product,Category,Quality,Location,Price,Avaliable,Interest_Category,Interest_Price,Interest_Location,Interest_Quality
+1,01,Nike1,Shoe,100,USA,100,T,Shoe,100,USA,100
+2,02,Nike2,Shoe,90,CANADA,90,T,Shoe,90,CANADA,90
+3,03,Nike3,Shoe,90,USA,90,F,Shoe,90,USA,90
+4,04,Nike4,Shoe,100,CANADA,100,T,Shoe,100,CANADA,100
+5,05,Nike5,Shoe,100,USA,100,T,Shoe,100,USA,100
+6,06,Nike6,Shoe,100,CANADA,100,F,Shoe,100,CANADA,100
+7,07,Nike7,Shoe,80,USA,80,T,Shoe,80,USA,80
+8,08,Nike8,Shoe,70,CANADA,70,F,Shoe,70,CANADA,70
+9,09,Nike9,Shoe,60,USA,60,T,Shoe,60,USA,60
+10,010,Nike10,TShirt,100,CANADA,100,T,Shoe,100,CANADA,100
+11,011,Nike11,Shorts,100,USA,95,T,Shoe,95,USA,100
